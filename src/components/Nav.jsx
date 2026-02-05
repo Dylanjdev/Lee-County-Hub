@@ -3,8 +3,11 @@ import { useState } from 'react'
 
 export default function Nav() {
 const [open, setOpen] = useState(false)
+
+const closeMenu = () => setOpen(false)
+
 return (
-<header className="sticky top-0 z-50 bg-dark/80 glass border-b border-white/10">
+<header className="sticky top-0 z-50 bg-dark/95 backdrop-blur-lg border-b border-white/10">
 <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 <a href="#" className="flex items-center gap-3 group">
 <span className="inline-flex h-9 w-9 rounded-2xl bg-primary/20 items-center justify-center ring-1 ring-primary/40 group-hover:scale-105 transition">
@@ -36,13 +39,13 @@ return (
 
 
 {open && (
-<div className="md:hidden border-t border-white/10">
+<div className="md:hidden border-t border-white/10 bg-dark/95">
 <div className="max-w-7xl mx-auto px-4 py-3 grid gap-2">
-<a href="#directory" className="px-4 py-2 rounded-xl hover:bg-white/5">Directory</a>
-<a href="#resources" className="px-4 py-2 rounded-xl hover:bg-white/5">Resources</a>
-<a href="#how" className="px-4 py-2 rounded-xl hover:bg-white/5">How it works</a>
-<a href="https://smithdigitals.com/#/contact" target="_blank" rel="noopener" className="px-4 py-2 rounded-xl hover:bg-white/5">Add your business</a>
-<a href="https://smithdigitals.com/#/contact" target="_blank" rel="noopener" className="px-4 py-2 rounded-xl bg-primary/10 text-primary border border-primary/30">Contact</a>
+<a href="#directory" onClick={closeMenu} className="px-4 py-2 rounded-xl hover:bg-white/5">Directory</a>
+<a href="#resources" onClick={closeMenu} className="px-4 py-2 rounded-xl hover:bg-white/5">Resources</a>
+<a href="#how" onClick={closeMenu} className="px-4 py-2 rounded-xl hover:bg-white/5">How it works</a>
+<a href="https://smithdigitals.com/#/contact" onClick={closeMenu} target="_blank" rel="noopener" className="px-4 py-2 rounded-xl hover:bg-white/5">Add your business</a>
+<a href="https://smithdigitals.com/#/contact" onClick={closeMenu} target="_blank" rel="noopener" className="px-4 py-2 rounded-xl bg-primary/10 text-primary border border-primary/30">Contact</a>
 </div>
 </div>
 )}
