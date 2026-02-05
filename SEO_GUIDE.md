@@ -11,7 +11,8 @@
 - ✅ Language tag (en-US)
 
 ### 2. **Open Graph & Social Media**
-- ✅ Open Graph tags for Facebook/LinkedIn sharing
+- ✅ Open Graph tags for Facebook/LinkedIn sharing with OG image
+- ✅ OG image (og-image.jpg) with proper dimensions (1200x630px)
 - ✅ Twitter Card tags for Twitter sharing
 - ✅ Social media preview optimization
 
