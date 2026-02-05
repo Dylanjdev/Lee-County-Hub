@@ -89,9 +89,9 @@ export default function LocalResources() {
   ];
 
   return (
-    <section id="resources" className="max-w-7xl mx-auto px-4 py-16">
+    <section id="resources" className="max-w-7xl mx-auto px-4 py-16" aria-labelledby="resources-heading">
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-semibold mb-3 text-primary">Local Resources Hub</h2>
+        <h2 id="resources-heading" className="text-3xl font-semibold mb-3 text-primary">Local Resources Hub</h2>
         <p className="text-white/70 max-w-2xl mx-auto">
           Essential services, facilities, and information for Lee County, Virginia residents and visitors
         </p>

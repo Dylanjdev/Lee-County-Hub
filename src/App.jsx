@@ -14,6 +14,7 @@ export default function App() {
     <MissionProvider>
       <div className="bg-[#0b0f19] text-white min-h-screen font-inter">
         <Nav />
+        <main id="main-content" role="main">
         <Hero />
         <Mission />
         <Featured />
@@ -21,6 +22,7 @@ export default function App() {
         <CTA />
         <Directory />
         <LocalResources />
+        </main>
         <Footer />
       </div>
     </MissionProvider>

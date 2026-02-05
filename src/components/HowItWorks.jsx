@@ -1,9 +1,9 @@
 // src/components/HowItWorks.jsx
 export default function HowItWorks() {
   return (
-    <section id="how" className="max-w-5xl mx-auto px-4 py-16">
+    <section id="how" className="max-w-5xl mx-auto px-4 py-16" aria-labelledby="how-heading">
       <div className="glass rounded-2xl border border-white/10 p-6 md:p-10">
-        <h2 className="text-3xl font-semibold mb-6 text-primary">How It Works</h2>
+        <h2 id="how-heading" className="text-3xl font-semibold mb-6 text-primary">How It Works</h2>
         
         <div className="space-y-6 text-white/70">
           <div>

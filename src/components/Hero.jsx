@@ -18,10 +18,10 @@ export default function Hero() {
         <div className="glass rounded-2xl border border-white/10 p-6 md:p-10 shadow-soft animate-slideIn">
           {/* Top bar with links */}
           <div className="flex items-center gap-4 text-sm pb-6 border-b border-white/10">
-            <a href="#about" className="text-primary hover:text-primary/80">
+            <a href="#about" className="text-primary hover:text-primary/80" aria-current="page">
               About
             </a>
-            <button onClick={() => setIsOpen(true)} className="text-white/60 hover:text-white">
+            <button onClick={() => setIsOpen(true)} className="text-white/60 hover:text-white" aria-label="View our mission statement">
               Mission
             </button>
             <span className="ml-auto text-xs text-white/50">
@@ -29,6 +29,7 @@ export default function Hero() {
               <a
                 className="underline hover:no-underline"
                 href="mailto:dylanjsmith.dev@gmail.com"
+                aria-label="Email Dylan Smith"
               >
                 Email
               </a>
@@ -47,14 +48,16 @@ export default function Hero() {
             <a
               href="#directory"
               className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10"
+              aria-label="Browse all Lee County businesses in our directory"
             >
               Explore Local Businesses
             </a>
             <a
               href="https://smithdigitals.com/#/contact"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               className="px-4 py-2 rounded-xl bg-primary text-white hover:bg-primary/90"
+              aria-label="Contact Smith Digitals to get your business online"
             >
               Get Your Business Online
             </a>
@@ -64,8 +67,11 @@ export default function Hero() {
           <div className="mt-8 pt-6 border-t border-white/10 flex items-center gap-4">
             <img
               src={`${import.meta.env.BASE_URL}Dylan.jpg`}
-              alt="Dylan Smith"
+              alt="Dylan Smith, founder of Smith Digitals and creator of Lee County Business Hub"
               className="h-14 w-14 rounded-full ring-2 ring-white/10 object-cover"
+              width="56"
+              height="56"
+              loading="eager"
             />
             <div>
               <p className="font-medium">I'm Dylan Smith</p>

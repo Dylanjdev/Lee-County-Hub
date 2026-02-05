@@ -1,9 +1,9 @@
 export function BusinessCard({ biz }) {
 return (
-<div className="rounded-2xl border border-white/10 bg-white/5 hover:bg-white/[0.07] transition p-5 shadow-soft">
-<div className="h-12 w-12 rounded-xl bg-white/10 flex items-center justify-center text-2xl mb-3">{biz.icon}</div>
-<h3 className="font-semibold">{biz.name}</h3>
-<p className="text-white/60 text-sm">{biz.short}</p>
+<article className="rounded-2xl border border-white/10 bg-white/5 hover:bg-white/[0.07] transition p-5 shadow-soft">
+<div className="h-12 w-12 rounded-xl bg-white/10 flex items-center justify-center text-2xl mb-3" aria-hidden="true">{biz.icon}</div>
+<h3 className="font-semibold text-lg">{biz.name}</h3>
+<p className="text-white/60 text-sm mt-1">{biz.short}</p>
 
 {(biz.phone || biz.email || biz.mission) && (
 <div className="mt-4 pt-4 border-t border-white/10 space-y-2">
@@ -13,7 +13,17 @@ return (
 </div>
 )}
 
-{biz.url && <a href={biz.url} target="_blank" className="mt-4 inline-flex px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 text-sm">Visit Site</a>}
-</div>
+{biz.url && (
+  <a 
+    href={biz.url} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="mt-4 inline-flex px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 text-sm transition-colors"
+    aria-label={`Visit ${biz.name} website`}
+  >
+    Visit Site
+  </a>
+)}
+</article>
 )
 }
