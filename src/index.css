@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Force dark look */
+:root {
+  color-scheme: dark;
+}
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0b0f19; /* your dark color */
+  color: white;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
