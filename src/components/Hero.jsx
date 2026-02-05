@@ -63,9 +63,9 @@ export default function Hero() {
           {/* Owner info */}
           <div className="mt-8 pt-6 border-t border-white/10 flex items-center gap-4">
             <img
-              src="/Dylan.jpg"
+              src={`${import.meta.env.BASE_URL}Dylan.jpg`}
               alt="Dylan Smith"
-              className="h-14 w-14 rounded-full ring-2 ring-white/10"
+              className="h-14 w-14 rounded-full ring-2 ring-white/10 object-cover"
             />
             <div>
               <p className="font-medium">I'm Dylan Smith</p>
