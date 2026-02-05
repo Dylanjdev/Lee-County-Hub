@@ -2,8 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Lee-County-Hub/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://smithdigitals.com" crossorigin>
+    <link rel="dns-prefetch" href="https://smithdigitals.com">
+    
+    <!-- Favicon and Theme -->
+    <link rel="icon" type="image/svg+xml" href="/Lee-County-Hub/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/Lee-County-Hub/favicon.svg" />
+    <meta name="theme-color" content="#4B7BEC" />
+    <meta name="color-scheme" content="dark light" />
     
     <!-- Primary Meta Tags -->
     <title>Lee County Business Hub | Local Business Directory in Lee County, VA</title>
@@ -11,8 +20,12 @@
     <meta name="description" content="Discover local businesses in Lee County, Virginia. Free directory featuring services, shops, and professionals. Supporting Lee County's local economy with modern digital presence." />
     <meta name="keywords" content="Lee County VA, Lee County Virginia, local business directory, Lee County businesses, small business Lee County, local services Virginia, business listings Lee County" />
     <meta name="author" content="Smith Digitals" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href="https://leecountyhub.com" />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="referrer" content="origin-when-cross-origin" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -106,9 +119,58 @@
         }
       ]
     }
+    </script>    
+    <!-- BreadcrumbList Schema for better navigation in search results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://leecountyhub.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Directory",
+          "item": "https://leecountyhub.com#directory"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Resources",
+          "item": "https://leecountyhub.com#resources"
+        }
+      ]
+    }
     </script>
-    <script type="module" crossorigin src="/Lee-County-Hub/assets/index-rC3u1GBT.js"></script>
-    <link rel="stylesheet" crossorigin href="/Lee-County-Hub/assets/index-BZ0PG2nC.css">
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Smith Digitals",
+      "url": "https://smithdigitals.com",
+      "logo": "https://leecountyhub.com/favicon.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-423-923-1909",
+        "contactType": "customer service",
+        "email": "dylanjsmith.dev@gmail.com",
+        "areaServed": "US-VA",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://leecountyhub.com"
+      ]
+    }
+    </script>    <script type="module" crossorigin src="/Lee-County-Hub/assets/index-DU8gF69e.js"></script>
+    <link rel="modulepreload" crossorigin href="/Lee-County-Hub/assets/vendor-react-BvLDY2xA.js">
+    <link rel="stylesheet" crossorigin href="/Lee-County-Hub/assets/index-D6beIOBk.css">
   </head>
   <body>
     <div id="root"></div>
